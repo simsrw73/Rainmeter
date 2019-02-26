@@ -103,7 +103,7 @@ ImageTint=ccccccee
 X=#IconVPad#
 Y=(#Height# - (#LgIconSize# + 2))
 H=#LgIconSize#
-LeftMouseUpAction=logosref:Bible.[MeasureVerseShortRef]
+LeftMouseUpAction=https://ref.ly/logosres/esv?ref=Bible.[MeasureVerseShortRef]
 MouseOverAction=[!SetOption MeterCommandBarOpenLogos ImageTint ffffffff][!Update]
 MouseLeaveAction=[!SetOption MeterCommandBarOpenLogos ImageTint ccccccee][!Update]
 DynamicVariables=1
