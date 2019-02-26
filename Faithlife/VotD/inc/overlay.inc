@@ -31,7 +31,7 @@ FontColor=ffffff
 FontSize=10
 FontFace=Source Sans Pro
 StringAlign=Right
-X=(#Width# - (#SmIconSize# * 2))
+X=(#Width# - ((#SmIconSize# + #IconHPad#) * 3))
 Y=4
 Group=HeaderBar
 
@@ -41,10 +41,10 @@ TooltipText="Share on Faithlife"
 ImageName=#@#Images\fl-round.png
 PreserveAspectRatio=1
 ImageTint=ccccccee
-X=(#Width# - (#SmIconSize# * 2) + 8)
+X=(#Width# - ((#SmIconSize# + #IconHPad#) * 3) + #IconHPad#)
 Y=4
 H=16
-LeftMouseUpAction=https://faithlife.com/share?content=Faithlife%20VotD%20from%20Rainmeter&url=[MeasureVotDLightbox:EncodeURL]
+LeftMouseUpAction=https://faithlife.com/share?content=[MeasureVerseRef:EncodeURL]&url=[MeasureVotDLightbox:EncodeURL]
 MouseOverAction=[!SetOption MeterHeaderShareToFL ImageTint ffffffff][!Update]
 MouseLeaveAction=[!SetOption MeterHeaderShareToFL ImageTint ccccccee][!Update]
 DynamicVariables=1
@@ -59,9 +59,24 @@ ImageTint=ccccccee
 X=4R
 Y=4
 H=16
-LeftMouseUpAction=https://www.facebook.com/dialog/share?app_id=538368573316629&display=popup&href=[MeasureVotDLightbox:EncodeURL]&redirect_uri=[MeasureVotDLightbox:EncodeURL]
+LeftMouseUpAction=https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=[MeasureVotDLightbox:EncodeURL]&display=popup&ref=plugin&src=share_button
 MouseOverAction=[!SetOption MeterHeaderShareToFB ImageTint ffffffff][!Update]
 MouseLeaveAction=[!SetOption MeterHeaderShareToFB ImageTint ccccccee][!Update]
+DynamicVariables=1
+Group=HeaderBar
+
+[MeterHeaderShareToTwitter]
+Meter=Image
+TooltipText="Share on Twitter"
+ImageName=#@#Images\twitter-round.png
+PreserveAspectRatio=1
+ImageTint=ccccccee
+X=4R
+Y=4
+H=16
+LeftMouseUpAction=https://twitter.com/intent/tweet?original_referer=[MeasureVotDLightbox:EncodeURL]&ref_src=twsrc%5Etfw&text=[MeasureVerseRef:EncodeURL]&tw_p=tweetbutton&url=[MeasureVotDLightbox:EncodeURL]
+MouseOverAction=[!SetOption MeterHeaderShareToTwitter ImageTint ffffffff][!Update]
+MouseLeaveAction=[!SetOption MeterHeaderShareToTwitter ImageTint ccccccee][!Update]
 DynamicVariables=1
 Group=HeaderBar
 
@@ -99,13 +114,14 @@ Meter=Image
 TooltipText="Open Passage Guide to [&MeasureVerseRef]"
 ImageName=#@#Images\PG.png
 PreserveAspectRatio=1
+ImageTint=ccccccee
 X=#IconHPad#R
-Y=(#Height# - (#SmIconSize# + #IconVPad#))
-H=#SmIconSize#
-W=#SmIconSize#
+Y=(#Height# - (#MdIconSize# + #IconVPad#))
+H=#MdIconSize#
+W=#MdIconSize#
 LeftMouseUpAction=https://ref.ly/logos4/Guide?t=My+Passage+Guide&ref=Bible.[MeasureVerseShortRef]
-MouseOverAction=[!SetOption MeterCommandBarOpenPassageGuide SolidColor cccccc33][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarOpenPassageGuide SolidColor 00000000][!Update]
+MouseOverAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint ffffffff][!SetOption MeterCommandBarOpenPassageGuide SolidColor cccccc33][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint ccccccee][!SetOption MeterCommandBarOpenPassageGuide SolidColor 00000000][!Update]
 DynamicVariables=1
 Group=CommandBar
 
@@ -114,13 +130,14 @@ Meter=Image
 TooltipText="Copy bible verse to clipboard"
 ImageName=#@#Images\CopyBible.png
 PreserveAspectRatio=1
+ImageTint=ccccccee
 X=#IconHPad#R
-Y=(#Height# - (#SmIconSize# + #IconVPad#))
-H=#SmIconSize#
-W=#SmIconSize#
+Y=(#Height# - (#MdIconSize# + #IconVPad#))
+H=#MdIconSize#
+W=#MdIconSize#
 LeftMouseUpAction=[!SetClip [&MeasureVerseText]]
-MouseOverAction=[!SetOption MeterCommandBarCopyBible SolidColor cccccc33][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarCopyBible SolidColor 00000000][!Update]
+MouseOverAction=[!SetOption MeterCommandBarCopyBible ImageTint ffffffff][!SetOption MeterCommandBarCopyBible SolidColor cccccc33][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarCopyBible ImageTint ccccccee][!SetOption MeterCommandBarCopyBible SolidColor 00000000][!Update]
 Group=CommandBar
 
 [MeterCommandBarCopyRf]
@@ -128,11 +145,12 @@ Meter=Image
 TooltipText="Copy bible reference to clipboard"
 ImageName=#@#Images\CopyRf.png
 PreserveAspectRatio=1
+ImageTint=ccccccee
 X=#IconHPad#R
-Y=(#Height# - (#SmIconSize# + #IconVPad#))
-H=#SmIconSize#
-W=#SmIconSize#
+Y=(#Height# - (#MdIconSize# + #IconVPad#))
+H=#MdIconSize#
+W=#MdIconSize#
 LeftMouseUpAction=[!SetClip [&MeasureVerseRef]]
-MouseOverAction=[!SetOption MeterCommandBarCopyRf SolidColor cccccc33][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarCopyRf SolidColor 00000000][!Update]
+MouseOverAction=[!SetOption MeterCommandBarCopyRf ImageTint ffffffff][!SetOption MeterCommandBarCopyRf SolidColor cccccc33][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarCopyRf ImageTint ccccccee][!SetOption MeterCommandBarCopyRf SolidColor 00000000][!Update]
 Group=CommandBar
