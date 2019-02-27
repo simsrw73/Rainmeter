@@ -93,5 +93,10 @@ Measure=WebParser
 URL=[MeasureVotDSite]
 StringIndex=4
 RegExpSubstitute=1
-Substitute="(?s)\s+":" ","(.*)":"[MeasureVerseRef]#CRLF#\1"
+Substitute="(?s)\s+":" "
+DynamicVariables=1
+
+[MeasureVerseFormattedText]
+Measure=String
+String="[MeasureVerseRef]#CRLF#[MeasureVerseText]"
 DynamicVariables=1
