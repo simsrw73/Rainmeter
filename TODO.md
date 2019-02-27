@@ -1,0 +1,3 @@
+- [ ] Update is happening at two intervals. The main site parser needs invoke the image download or text render on completion.
+- [ ] Optimize updates
+- [ ]
