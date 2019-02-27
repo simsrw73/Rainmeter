@@ -71,9 +71,9 @@ URL=[MeasureVotDSite]?width=#Width#
 StringIndex=1
 Download=1
 DownloadFile=VotD.jpg
-FinishAction=[!HideMeterGroup Background][!ShowMeterGroup VotD][!Update]
-OnConnectErrorAction=[!ShowMeterGroup Background][!HideMeterGroup VotD][!Update]
-OnDownloadErrorAction=[!ShowMeterGroup Background][!HideMeterGroup VotD][!Update]
+FinishAction=[!HideMeterGroup "Background"][!ShowMeterGroup "VotD"][!Update]
+OnConnectErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
+OnDownloadErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
 DynamicVariables=1
 
 [MeasureVerseShortRef]

@@ -45,8 +45,8 @@ X=(#Width# - ((#SmIconSize# + #IconHPad#) * 3) + #IconHPad#)
 Y=4
 H=16
 LeftMouseUpAction=https://faithlife.com/share?content=[MeasureVerseRef:EncodeURL]&url=[MeasureVotDLightbox:EncodeURL]
-MouseOverAction=[!SetOption MeterHeaderShareToFL ImageTint ffffffff][!Update]
-MouseLeaveAction=[!SetOption MeterHeaderShareToFL ImageTint ccccccee][!Update]
+MouseOverAction=[!SetOption MeterHeaderShareToFL ImageTint "ffffffff"][!Update]
+MouseLeaveAction=[!SetOption MeterHeaderShareToFL ImageTint "ccccccee"][!Update]
 DynamicVariables=1
 Group=HeaderBar
 
@@ -60,8 +60,8 @@ X=4R
 Y=4
 H=16
 LeftMouseUpAction=https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=[MeasureVotDLightbox:EncodeURL]&display=popup&ref=plugin&src=share_button
-MouseOverAction=[!SetOption MeterHeaderShareToFB ImageTint ffffffff][!Update]
-MouseLeaveAction=[!SetOption MeterHeaderShareToFB ImageTint ccccccee][!Update]
+MouseOverAction=[!SetOption MeterHeaderShareToFB ImageTint "ffffffff"][!Update]
+MouseLeaveAction=[!SetOption MeterHeaderShareToFB ImageTint "ccccccee"][!Update]
 DynamicVariables=1
 Group=HeaderBar
 
@@ -75,8 +75,8 @@ X=4R
 Y=4
 H=16
 LeftMouseUpAction=https://twitter.com/intent/tweet?original_referer=[MeasureVotDLightbox:EncodeURL]&ref_src=twsrc%5Etfw&text=[MeasureVerseRef:EncodeURL]&tw_p=tweetbutton&url=[MeasureVotDLightbox:EncodeURL]
-MouseOverAction=[!SetOption MeterHeaderShareToTwitter ImageTint ffffffff][!Update]
-MouseLeaveAction=[!SetOption MeterHeaderShareToTwitter ImageTint ccccccee][!Update]
+MouseOverAction=[!SetOption MeterHeaderShareToTwitter ImageTint "ffffffff"][!Update]
+MouseLeaveAction=[!SetOption MeterHeaderShareToTwitter ImageTint "ccccccee"][!Update]
 DynamicVariables=1
 Group=HeaderBar
 
@@ -104,8 +104,8 @@ X=#IconVPad#
 Y=(#Height# - (#LgIconSize# + 2))
 H=#LgIconSize#
 LeftMouseUpAction=https://ref.ly/logosres/esv?ref=Bible.[MeasureVerseShortRef]
-MouseOverAction=[!SetOption MeterCommandBarOpenLogos ImageTint ffffffff][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarOpenLogos ImageTint ccccccee][!Update]
+MouseOverAction=[!SetOption MeterCommandBarOpenLogos ImageTint "ffffffff"][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarOpenLogos ImageTint "ccccccee"][!Update]
 DynamicVariables=1
 Group=CommandBar
 
@@ -120,8 +120,8 @@ Y=(#Height# - (#MdIconSize# + #IconVPad#))
 H=#MdIconSize#
 W=#MdIconSize#
 LeftMouseUpAction=https://ref.ly/logos4/Guide?t=My+Passage+Guide&ref=Bible.[MeasureVerseShortRef]
-MouseOverAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint ffffffff][!SetOption MeterCommandBarOpenPassageGuide SolidColor cccccc33][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint ccccccee][!SetOption MeterCommandBarOpenPassageGuide SolidColor 00000000][!Update]
+MouseOverAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint "ffffffff"][!SetOption MeterCommandBarOpenPassageGuide SolidColor "cccccc33"][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint "ccccccee"][!SetOption MeterCommandBarOpenPassageGuide SolidColor "00000000"][!Update]
 DynamicVariables=1
 Group=CommandBar
 
@@ -136,8 +136,8 @@ Y=(#Height# - (#MdIconSize# + #IconVPad#))
 H=#MdIconSize#
 W=#MdIconSize#
 LeftMouseUpAction=[!SetClip [&MeasureVerseFormattedText]]
-MouseOverAction=[!SetOption MeterCommandBarCopyBible ImageTint ffffffff][!SetOption MeterCommandBarCopyBible SolidColor cccccc33][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarCopyBible ImageTint ccccccee][!SetOption MeterCommandBarCopyBible SolidColor 00000000][!Update]
+MouseOverAction=[!SetOption MeterCommandBarCopyBible ImageTint "ffffffff"][!SetOption MeterCommandBarCopyBible SolidColor "cccccc33"][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarCopyBible ImageTint "ccccccee"][!SetOption MeterCommandBarCopyBible SolidColor "00000000"][!Update]
 Group=CommandBar
 
 [MeterCommandBarCopyRf]
@@ -151,6 +151,6 @@ Y=(#Height# - (#MdIconSize# + #IconVPad#))
 H=#MdIconSize#
 W=#MdIconSize#
 LeftMouseUpAction=[!SetClip [&MeasureVerseRef]]
-MouseOverAction=[!SetOption MeterCommandBarCopyRf ImageTint ffffffff][!SetOption MeterCommandBarCopyRf SolidColor cccccc33][!Update]
-MouseLeaveAction=[!SetOption MeterCommandBarCopyRf ImageTint ccccccee][!SetOption MeterCommandBarCopyRf SolidColor 00000000][!Update]
+MouseOverAction=[!SetOption MeterCommandBarCopyRf ImageTint "ffffffff"][!SetOption MeterCommandBarCopyRf SolidColor "cccccc33"][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarCopyRf ImageTint "ccccccee"][!SetOption MeterCommandBarCopyRf SolidColor "00000000"][!Update]
 Group=CommandBar
