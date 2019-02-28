@@ -1,3 +1,6 @@
-- [ ] Update is happening at two intervals. The main site parser needs invoke the image download or text render on completion.
-- [ ] Optimize updates
-- [ ]
+== Possible Improvements
+
+- Download Button
+- Full Screen / Restore Buttons
+- Add Pull Down to overlay to display Blog posts with options to switch between blogs
+- Status indicator for status.faithlife.com
