@@ -7,7 +7,7 @@ OnRefreshAction=[!HideMeterGroup HeaderBar][!HideMeterGroup CommandBar][!Update]
 Name=Faithlife Verse of the Day
 Author=Randy W. Sims
 Information=
-Version=0.6.0
+Version=0.6.2
 License=MIT
 
 
@@ -62,7 +62,11 @@ Measure=WebParser
 URL=[&MeasureVotDLightbox]
 RegExp=(?siU)<link rel="image_src" href="(.*)\?width=(.*)".*<meta property="og:title" content="(.*)".*<meta property="og:description" content="(.*)"
 ;; Update every 15 minutes (900 UpdateRate * 1000ms Update)
-UpdateRate=900
+UpdateRate=120
+FinishAction=[!HideMeterGroup "Background"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
+OnRegExpErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
+OnConnectErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
+OnDownloadErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
 DynamicVariables=1
 
 [MeasureVotDImage]
@@ -71,10 +75,12 @@ URL=[MeasureVotDSite]?width=#Width#
 StringIndex=1
 Download=1
 DownloadFile=VotD.jpg
-FinishAction=[!HideMeterGroup "Background"][!ShowMeterGroup "VotD"][!Update]
+DynamicVariables=1
+FinishAction=[!HideMeterGroup "Background"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
+OnRegExpErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
 OnConnectErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
 OnDownloadErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
-DynamicVariables=1
+Disabled=1
 
 [MeasureVerseShortRef]
 Measure=WebParser
