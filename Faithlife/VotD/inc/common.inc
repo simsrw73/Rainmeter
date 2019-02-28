@@ -7,7 +7,7 @@ OnRefreshAction=[!HideMeterGroup HeaderBar][!HideMeterGroup CommandBar][!Update]
 Name=Faithlife Verse of the Day
 Author=Randy W. Sims
 Information=
-Version=0.6.2
+Version=0.6.3
 License=MIT
 
 
