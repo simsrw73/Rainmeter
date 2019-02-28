@@ -11,18 +11,18 @@ Version=0.6.2
 License=MIT
 
 
-;; ---------- Fallback Background ----------------------------------------
+;; ---------- Fallback Splash ----------------------------------------
 
-[Background]
+[Splash]
 Meter=Image
-BackgroundMode=2
+SplashMode=2
 SolidColor=5fbc39
 W=#Width#
 H=#Height#
 LeftMouseUpAction=[https://logos.com/verse-of-the-day]
-Group=Background
+Group=Splash
 
-[BackgroundLogo]
+[SplashLogo]
 Meter=Image
 ImageName=#@#Images\Faithlife-white.png
 PreserveAspectRatio=1
@@ -31,19 +31,19 @@ W=(#Width# * 0.60)
 ;;  X = ((#Width# / 2) - ((#Width# * 0.60) / 2)) ==
 X=(#Width# * 0.2)
 Y=(#Height# / 5)
-Group=Background
+Group=Splash
 
-[BackgroundTextVotD]
+[SplashTitle]
 Meter=String
 Text="Verse of the Day"
 AntiAlias=1
 FontFace=Source Sans Pro
-FontSize=([Background:H] / 7)
+FontSize=([Splash:H] / 7)
 FontColor=333333
 StringAlign=Center
 y=0R
 x=(#Width# / 2)
-Group=Background
+Group=Splash
 
 
 ;; ---------- Measures ----------------------------------------
@@ -63,10 +63,10 @@ URL=[&MeasureVotDLightbox]
 RegExp=(?siU)<link rel="image_src" href="(.*)\?width=(.*)".*<meta property="og:title" content="(.*)".*<meta property="og:description" content="(.*)"
 ;; Update every 15 minutes (900 UpdateRate * 1000ms Update)
 UpdateRate=120
-FinishAction=[!HideMeterGroup "Background"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
-OnRegExpErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
-OnConnectErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
-OnDownloadErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
+FinishAction=[!HideMeterGroup "Splash"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
+OnRegExpErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
+OnConnectErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
+OnDownloadErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
 DynamicVariables=1
 
 [MeasureVotDImage]
@@ -76,10 +76,10 @@ StringIndex=1
 Download=1
 DownloadFile=VotD.jpg
 DynamicVariables=1
-FinishAction=[!HideMeterGroup "Background"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
-OnRegExpErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
-OnConnectErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
-OnDownloadErrorAction=[!ShowMeterGroup "Background"][!HideMeterGroup "VotD"][!Update]
+FinishAction=[!HideMeterGroup "Splash"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
+OnRegExpErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
+OnConnectErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
+OnDownloadErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
 Disabled=1
 
 [MeasureVerseShortRef]
