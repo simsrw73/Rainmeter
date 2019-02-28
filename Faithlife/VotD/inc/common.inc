@@ -15,7 +15,7 @@ License=MIT
 
 [Splash]
 Meter=Image
-SplashMode=2
+BackgroundMode=2
 SolidColor=5fbc39
 W=#Width#
 H=#Height#
@@ -62,7 +62,7 @@ Measure=WebParser
 URL=[&MeasureVotDLightbox]
 RegExp=(?siU)<link rel="image_src" href="(.*)\?width=(.*)".*<meta property="og:title" content="(.*)".*<meta property="og:description" content="(.*)"
 ;; Update every 15 minutes (900 UpdateRate * 1000ms Update)
-UpdateRate=120
+UpdateRate=(60 * #UpdateInterval#)
 FinishAction=[!HideMeterGroup "Splash"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
 OnRegExpErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
 OnConnectErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
