@@ -71,16 +71,16 @@ DynamicVariables=1
 
 [MeasureVotDImage]
 Measure=WebParser
+UpdateDivider=-1
 URL=[MeasureVotDSite]?width=#Width#
 StringIndex=1
 Download=1
 DownloadFile=VotD.jpg
 DynamicVariables=1
-FinishAction=[!HideMeterGroup "Splash"][!ShowMeterGroup "VotD"][!UpdateMeasure "MeasureVotDImage"][!Update]
+FinishAction=[!HideMeterGroup "Splash"][!ShowMeterGroup "VotD"][!Update]
 OnRegExpErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
 OnConnectErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
 OnDownloadErrorAction=[!ShowMeterGroup "Splash"][!HideMeterGroup "VotD"][!Update]
-Disabled=1
 
 [MeasureVerseShortRef]
 Measure=WebParser
