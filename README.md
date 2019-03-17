@@ -13,6 +13,7 @@
 - Share the VotD artwork to Faithlife, Facebook, or Twitter
 - Open Logos to the VotD in your preferred bible
 - Open a Passage Guide in Logos to the VotD
+- Start a Workflow on the VotD
 - Copy the text of the verse to the clipboard
 - Copy the verse reference to the clipboard
 

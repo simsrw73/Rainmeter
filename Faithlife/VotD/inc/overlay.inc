@@ -129,7 +129,7 @@ Group=CommandBar
 
 [MeterCommandBarOpenWorkflow]
 Meter=Image
-TooltipText="Open Workflow to [&MeasureVerseRef]"
+TooltipText="Start a Workflow on [&MeasureVerseRef]"
 ImageName=#@#Images\Workflow.png
 PreserveAspectRatio=1
 ImageTint=ccccccee
