@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg834"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="workflow.svg"
+   inkscape:export-filename="H:\projects\Rainmeter\Faithlife\@Resources\Images\workflow.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs828" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.4"
+     inkscape:cx="8.2932965"
+     inkscape:cy="24.687672"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g5701"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="2560"
+     inkscape:window-height="1305"
+     inkscape:window-x="-9"
+     inkscape:window-y="97"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata831">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Shield">
+    <g
+       id="g5701"
+       transform="matrix(1.1966353,0,0,1.1966353,-1.8996375,-1.1671902)">
+      <path
+         inkscape:connector-curvature="0"
+         id="rect1391"
+         d="m 3.0278804,2.1011815 v 8.7965005 h 5.9590904 v 0.02014 L 10.728105,6.5092521 8.9869708,2.1011829 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#4d4d4d;stroke-width:0.03998901;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="H:\projects\Rainmeter\Faithlife\@Resources\Images\PG.png"
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="rect828"
+         d="M 5.1322752,4.5840404 V 8.7188909 L 6.4617038,8.0823302 7.7917361,8.7188909 V 8.044784 h -0.00125 V 4.5840404 Z"
+         style="display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.31106776" />
+    </g>
+  </g>
+</svg>

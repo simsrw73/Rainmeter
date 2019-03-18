@@ -106,3 +106,7 @@ DynamicVariables=1
 Measure=String
 String="[MeasureVerseRef]#CRLF#[MeasureVerseText]"
 DynamicVariables=1
+
+[MeasureVerseRef2DTR]
+Measure=Script
+ScriptFile=#@#inc\Bible2DTR.lua

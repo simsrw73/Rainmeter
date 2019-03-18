@@ -127,6 +127,23 @@ MouseLeaveAction=[!SetOption MeterCommandBarOpenPassageGuide ImageTint "ccccccee
 DynamicVariables=1
 Group=CommandBar
 
+[MeterCommandBarOpenWorkflow]
+Meter=Image
+TooltipText="Open Workflow to [&MeasureVerseRef]"
+ImageName=#@#Images\Workflow.png
+PreserveAspectRatio=1
+ImageTint=ccccccee
+X=#IconHPad#R
+Y=(#Height# - (#MdIconSize# + #IconVPad#) - 2)
+H=#MdIconSize#
+W=#MdIconSize#
+Padding=0,2,0,1
+LeftMouseUpAction=https://ref.ly/logos4/Workflow?TemplateId=WORKFLOW%3aBIBLE-STUDY&Key=[MeasureVerseRef2DTR]
+MouseOverAction=[!SetOption MeterCommandBarOpenWorkflow ImageTint "ffffffff"][!SetOption MeterCommandBarOpenWorkflow SolidColor "cccccc33"][!Update]
+MouseLeaveAction=[!SetOption MeterCommandBarOpenWorkflow ImageTint "ccccccee"][!SetOption MeterCommandBarOpenWorkflow SolidColor "00000000"][!Update]
+DynamicVariables=1
+Group=CommandBar
+
 [MeterCommandBarCopyBible]
 Meter=Image
 TooltipText="Copy bible verse to clipboard"
